@@ -7,9 +7,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([42.832415, 74.55336]).addTo(map)
 
-fetch("http://localhost:3000/devices")
+fetch("https://api.jsonbin.io/b/6290ec3f449a1f3821f1cb80")
     .then(res => res.json())
-        .then(data => renderCarMarkers(data));
+        .then(data => renderCarMarkers(data.devices));
 
 const renderCarMarkers = (cars) => {
     cars.map(car => {
