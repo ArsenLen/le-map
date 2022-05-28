@@ -5,3 +5,26 @@
 #map {
     height: 100vh;
 }
+.car-name {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 40px;
+    background: #3AA6D0;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+}
+.car-name:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 12px solid #3AA6D0;
+    border-top: 6px solid #3AA6D0;
+    border-bottom: 10px solid transparent;
+    left: 20px;
+    bottom: -10px;
+}
+  
